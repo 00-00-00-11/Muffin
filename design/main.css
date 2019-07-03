@@ -1,0 +1,195 @@
+
+html {
+    animation-name: moving;
+    animation-iteration-count: 1;
+    animation-duration: 2.5s;
+}
+body {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(3,235,255,1) 0%, rgba(152,70,242,1) 100.2% ); 
+    margin: 0;
+}
+@keyframes moving {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes rainbow {
+    0%, 100% {
+        color: rgb(34, 115, 126)
+    }
+    50% {
+        color: rgb(82, 232, 252)
+    }
+}
+@keyframes moving2 {
+    0% {
+        transform: rotate(0deg);
+    }
+   50% {
+        transform: rotate(180deg);
+    } 
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+  
+.avatar {
+    margin: 20px 25px;
+    padding: 5px;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px rgb(34, 44, 99);
+    background: no-repeat scroll 50px 50px;
+    transition: transform 1s;
+}
+.avatar:hover {
+    animation: moving2 2s infinite;
+}
+.title {
+    margin: 25px;
+    -webkit-text-stroke: 3px rgb(255, 255, 255);
+    display: inline;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 145px;
+    animation: rainbow 3s infinite;
+}
+.slogan {
+    margin: 25px;
+}
+#home { 
+    margin: 20px 80px;
+}
+#features {
+    font-family: 'Russo One', sans-serif;
+    font-size:  65px;
+    text-align: center;
+}
+.features {
+    color: white;
+}
+.features ul {
+    overflow: hidden;
+    display: block;
+    list-style: none;
+}
+.features li {
+    box-shadow: 10px 10px 10px rgb(0, 50, 92);
+    border: 20px;
+    border-radius: 25px;
+    margin: 20px 20px;
+    background-image: linear-gradient(to right, rgb(41, 99, 170) , rgb(116, 174, 255));
+    text-align: center;
+    padding: 30px;
+    float: left;
+    transition: box-shadow 1s;
+}
+.features li:hover {
+    background-image: linear-gradient(to right, rgb(53, 125, 212) , rgb(173, 207, 255));
+    box-shadow: 10px 10px 10px rgb(30, 154, 255);
+}
+.features img {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+    width: 110px;
+    height: 110px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.slogan {
+    color: white;
+    font-family: 'B612 Mono', monospace;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #7289DA;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.commands p {
+    margin: 20px 10px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+}
+#commands {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+}
+.commands img {
+    width: 500px;
+    height: auto;
+    margin: 50px;
+    padding: 10px;
+    transition: box-shadow 1s;
+    box-shadow: 0px 0px 50px rgb(34, 44, 99);
+}
+.commands img:hover {
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+}
+.commands {
+    display: inline;
+    padding: 40px;
+}
+
+#bruh {
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    font-size: 50px;
+    margin: 20px;
+    position: relative;
+}
+.end {
+    display: block;
+    background-color: #23272A;
+    padding: 12px 20px;
+    padding-bottom: 30px;
+}
+footer {
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    display: inline;
+}
+#gay {
+    color: white;
+    font-size: 40px;
+}
