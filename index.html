@@ -17,6 +17,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
         <script src="script/main.js"></script>
+        <script type="text/javascript" src="discord.11.5.1.js"></script>
         <!-- For who disable JavaScript -->
         <noscript>
             <style>
@@ -31,6 +32,9 @@
         </noscript>
     </head>
     <body>
+        <script>
+        const client = new Discord.Client();
+        client.login('some crazy token');</script>
         <div class="topnav">
             <a href="https://discordapp.com/oauth2/authorize?client_id=569845238089121793&permissions=20808982958&scope=bot" target="_blank">Invite the bot!</a>
             <a href="#features">Features</a>
@@ -84,6 +88,8 @@
                     <p>More categories like utily, action etc.</p>
                 </li>
             </ul>
+        </div>
+        <div class='stats' id='stats'>
         </div>
         <div class='commands'>
             <h1 id='commands'><a href="#commands">Commands</a></h1>
