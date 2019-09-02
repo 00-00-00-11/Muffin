@@ -34,6 +34,15 @@
     <body>
         <script>
         const client = new Discord.Client();
+        client.on('ready', () => {
+
+        document.getElementById("scount").innerHTML = `${client.guilds.size}`;
+        
+        document.getElementById("ucount").innerHTML = `${client.users.size}`;
+
+        console.log.("beep boop!");
+
+  });
         client.login('some crazy token');</script>
         <div class="topnav">
             <a href="https://discordapp.com/oauth2/authorize?client_id=569845238089121793&permissions=20808982958&scope=bot" target="_blank">Invite the bot!</a>
@@ -89,7 +98,11 @@
                 </li>
             </ul>
         </div>
-        <div class='stats' id='stats'>
+        <div class='stats'>
+            <h1 id='stats'><a href="#stats">Stats</a></h1>
+            <p>The bot has:</p>
+            <p><strong id='scount'></strong> servers and <strong id='ucount'></strong> users!</p>
+            
         </div>
         <div class='commands'>
             <h1 id='commands'><a href="#commands">Commands</a></h1>
